@@ -1,28 +1,33 @@
 import streamlit as st
-
+from PIL import Image
+image = Image.open('uteicon.jpg')
 st.set_page_config(
     page_title="Hello",
     page_icon="👋",
 )
 
-st.write("# Welcome to Streamlit! 👋")
+mid, col2 = st.columns([1,5 ])
+with mid: st.image(image, width=100)
+with col2:
+    st.write('###  HCMC University of Technology and Education')
+
+
+st.write("# Welcome to Movie Recommender System! 👋")
 
 st.sidebar.success("Select a demo above.")
 
 st.markdown(
     """
-    Streamlit is an open-source app framework built specifically for
-    Machine Learning and Data Science projects.
-    **👈 Select a demo from the sidebar** to see some examples
-    of what Streamlit can do!
-    ### Want to learn more?
-    - Check out [streamlit.io](https://streamlit.io)
-    - Jump into our [documentation](https://docs.streamlit.io)
-    - Ask a question in our [community
-        forums](https://discuss.streamlit.io)
-    ### See more complex demos
-    - Use a neural net to [analyze the Udacity Self-driving Car Image
-        Dataset](https://github.com/streamlit/demo-self-driving)
-    - Explore a [New York City rideshare dataset](https://github.com/streamlit/demo-uber-nyc-pickups)
+    Build a Machine Learning web application in Python with Streamlit. 
+    **A content based movie recommender system using cosine similarity.**
+    
+    ### How to run this application
+    - Select model
+    - After the model is created, select app to run
+    ### Student
+    - Nguyễn Sinh Hùng
+    - 20110647
+    ### Teacher
+    - Trần Tiến Đức
 """
 )
