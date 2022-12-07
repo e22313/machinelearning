@@ -29,5 +29,10 @@ st.markdown(
     - 20110647
     ### Teacher
     - Trần Tiến Đức
+    ### Source code
+    - https://github.com/e22313/machinelearning.git
+    ### Reference
+    - https://www.youtube.com/watch?v=1xtrIEwY_zY
+    - https://www.datacamp.com/tutorial/streamlit
 """
 )
