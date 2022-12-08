@@ -76,10 +76,8 @@ with st.spinner('Wait for it...'):
         for i in distances[1:6]:
             print(new.iloc[i[0]].title)
 
-
-
-
-
+    pickle.dump(new,open('movie_list.pkl','wb'))
+    pickle.dump(similarity,open('similarity.pkl','wb'))
 st.success('Done!')
 
 

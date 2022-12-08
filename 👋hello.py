@@ -30,7 +30,8 @@ st.markdown(
     ### Teacher
     - Trần Tiến Đức
     ### Source code
-    - https://github.com/e22313/machinelearning.git
+    - code: https://github.com/e22313/machinelearning.git
+    - data: https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata?select=tmdb_5000_movies.csv
     ### Reference
     - https://www.youtube.com/watch?v=1xtrIEwY_zY
     - https://www.datacamp.com/tutorial/streamlit
